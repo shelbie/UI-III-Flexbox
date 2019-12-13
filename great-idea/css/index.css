@@ -77,7 +77,15 @@ h2, h3 {
 a {
 	color: gray;
 	text-decoration: none;
-	padding: 5px;
+	padding: 10px;
+}
+
+
+
+.anchors a:hover {
+	color: black;
+	background-color: gray;
+	transition: all .4s ease-in-out;
 }
 
 /* Flex in the works below */
@@ -148,11 +156,20 @@ img {
 	align-items: center;
 
 }
-.left-side .anchor {
+.anchor {
 	padding: 2% 4%;
 	width: 50%;
 	border: 1px solid black;
 }
+
+.anchor a {
+	color: black;
+}
+
+.anchor-one a{
+	color: black;
+}
+
 
 .twocolumns, .threecolumns {
 	display: flex;
@@ -196,6 +213,21 @@ footer div address {
 
 div.copyright {
 	padding: 5%;
+	text-align: center;
 	justify-content: space-around;
-	align-self: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
