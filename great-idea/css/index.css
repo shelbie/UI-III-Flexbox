@@ -63,171 +63,149 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-
+/* MY CODE BEGINS HERE */
 
 /* basic styling */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	margin: 0 3%;
+}
+
 h2, h3 {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 20px;
 	font-weight: bold;
 }
 
-a {
-	color: gray;
-	text-decoration: none;
-	padding: 10px;
-}
-
-
-
-.anchors a:hover {
-	color: black;
-	background-color: gray;
-	transition: all .4s ease-in-out;
-}
-
-/* Flex in the works below */
-div.master-container {
-	margin: 0 5%;
-}
-
 /* header */
-header {
-	width: 100%;
-	top: 0;
-	margin: 0 auto;
-	position: fixed;
-	z-index: -1%;
+header .nav-items {
+	height: 7%;
+
 }
-header nav {
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+  .nav-items{
 	background-color: lightblue;
-}
-
-.anchors {
 	display: flex;
-	width: 80%;
-	justify-content: space-between;
-	padding: 0 2%;
-}
-
-.logo {
-	display: flex;
-	width: 10%;
-	align-self: right;
-	justify-content: space-evenly;
-
-}
-
-
-/* H1 and picture */
-
-.container-one {
-	display: flex;
+	align-items: center;
 	width: 100%;
-	padding: 10% 2% 5% 2%;
+	justify-content: space-evenly;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+a.nav-bar:hover {
+	color: black;
+	background-color: slategray;
+	transition: all .5s ease-in;
+	padding: 2%;
+}
+
+
+/* image between header and section below! */
+
+
+.services-header-img {
+	width: 100%;
+	padding: 8% 0 2% 0;
+
+}
+
+.index-middle-img {
+	padding: 2% 0;
+}
+
+/* sections start BELOW! */
+.first-section {
+	padding: 8% 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.first-section h1 {
+	font-size: 60px;
 	text-align: center;
-	justify-content: space-evenly;
-	align-items: center;	
 }
 
-
-img {
-	justify-content: stretch;
-	width: 100%;
-
-}
-
-
-.left-side {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-
-.container-one .left-side h1 {
-	font-size: 90px;
-	display: flex;
-	align-items: center;
-
-}
-.anchor {
-	padding: 2% 4%;
-	width: 50%;
-	border: 1px solid black;
-}
-
-.anchor a {
-	color: black;
-}
-
-.anchor-one a{
-	color: black;
-}
-
-
-.twocolumns, .threecolumns {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	padding: 5% 0;
-}
-
-.twocolumns {
-	border-top: 1px solid black;
-}
-
-.threecolumns {
-	border-bottom: 1px solid black;
-}
-
-.first, .second, .third, .fourth, .fifth  {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-}
-.first, .second {
+.first-section .split-top {
 	width: 49%;
 }
 
-.third, .fourth, .fifth {
-	width: 33%;
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 2% 0;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.container .articles {
+	justify-content: space-around;
+	padding: 2%;
+	flex-flow: column;
+	border: 1px solid black;
+	width: 48%;
+	margin: 2% 0;
+	background-color: whitesmoke;
+}
+
+.articles .learn-more {
+	display: flex;
+	padding: 2%;
+	border: 1px solid black;
+	width: 40%;
+	justify-content: center;
+	text-decoration: none;
+	border-radius: 5px;
+	color: black;
+	background-color: white;
+}
+
+.articles p {
+	padding: 2%;
+	margin-bottom: 4%;
+}
+
+.services {
+	padding: 3% 0;
+	
+	
+}
+
+.container-two {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.container-two .info {
+	justify-content: space-between;
+	width: 47%;
+	padding: 4% 0;
+}
+
+ul {
+	line-height: 1.5;
+	padding: 4% 4%;
+	list-style: disc;
+
 }
 
 footer {
-	display: flex;
-	flex-direction: column;
-	padding: 3% 0;
-}
-
-
-footer div address {
-	justify-content: left;
-}
-
-div.copyright {
-	padding: 5%;
 	text-align: center;
-	justify-content: space-around;
+	margin: 5% 0 2% 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
