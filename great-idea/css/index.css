@@ -105,15 +105,17 @@ a {
 	color: gray;
 }
 
-a.nav-bar:hover {
-	color: black;
+a.nav-bar:hover, a.learn-more:hover {
+	color: white;
 	background-color: slategray;
 	transition: all .5s ease-in;
 	padding: 2%;
 }
 
 
-/* image between header and section below! */
+
+
+/*SERVICES image between header and section below! */
 
 
 .services-header-img {
@@ -126,21 +128,55 @@ a.nav-bar:hover {
 	padding: 2% 0;
 }
 
-/* sections start BELOW! */
+/* INDEX - sections start BELOW! */
 .first-section {
-	padding: 8% 0;
+	padding: 9% 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	text-align: center;
+
 }
 
 .first-section h1 {
-	font-size: 60px;
+	font-size: 90px;
 	text-align: center;
 }
 
+.first-section .split-top a {
+	border: 1px solid black;
+	padding: 1% 10%;
+}
+
 .first-section .split-top {
-	width: 49%;
+	width: 50%;
+}
+
+
+.second-section {
+	display: flex;
+	justify-content: stretch;
+	border-top: 1px solid black;
+}
+
+.second-section .articles {
+	padding: 2% 0;
+}
+
+.third-section .middle-img {
+	width: 100%;
+}
+
+.third-section {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid black;
+}
+
+.third-section .articles{
+	width: 33%;
+	padding: 2% 0;
+	justify-content: space-between;
 }
 
 .container {
@@ -205,7 +241,20 @@ ul {
 
 }
 
-footer {
+.footer {
 	text-align: center;
 	margin: 5% 0 2% 0;
+}
+
+.contact {
+	padding: 1% 0;
+}
+
+.contact h3 {
+	padding: 1% 0;
+}
+
+.copyright {
+	text-align: center;
+	margin: 5% 0 10% 0;
 }
