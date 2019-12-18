@@ -63,4 +63,198 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* MY CODE BEGINS HERE */
+
+/* basic styling */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	margin: 0 3%;
+}
+
+h2, h3 {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* header */
+header .nav-items {
+	height: 7%;
+
+}
+
+  .nav-items{
+	background-color: lightblue;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-evenly;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+a.nav-bar:hover, a.learn-more:hover {
+	color: white;
+	background-color: slategray;
+	transition: all .5s ease-in;
+	padding: 2%;
+}
+
+
+
+
+/*SERVICES image between header and section below! */
+
+
+.services-header-img {
+	width: 100%;
+	padding: 8% 0 2% 0;
+
+}
+
+.index-middle-img {
+	padding: 2% 0;
+}
+
+/* INDEX - sections start BELOW! */
+.first-section {
+	padding: 9% 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+
+}
+
+.first-section h1 {
+	font-size: 90px;
+	text-align: center;
+}
+
+.first-section .split-top a {
+	border: 1px solid black;
+	padding: 1% 10%;
+}
+
+.first-section .split-top {
+	width: 50%;
+}
+
+
+.second-section {
+	display: flex;
+	justify-content: stretch;
+	border-top: 1px solid black;
+}
+
+.second-section .articles {
+	padding: 2% 0;
+}
+
+.third-section .middle-img {
+	width: 100%;
+}
+
+.third-section {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid black;
+}
+
+.third-section .articles{
+	width: 33%;
+	padding: 2% 0;
+	justify-content: space-between;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 2% 0;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.container .articles {
+	justify-content: space-around;
+	padding: 2%;
+	flex-flow: column;
+	border: 1px solid black;
+	width: 48%;
+	margin: 2% 0;
+	background-color: whitesmoke;
+}
+
+.articles .learn-more {
+	display: flex;
+	padding: 2%;
+	border: 1px solid black;
+	width: 40%;
+	justify-content: center;
+	text-decoration: none;
+	border-radius: 5px;
+	color: black;
+	background-color: white;
+}
+
+.articles p {
+	padding: 2%;
+	margin-bottom: 4%;
+}
+
+.services {
+	padding: 3% 0;
+	
+	
+}
+
+.container-two {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.container-two .info {
+	justify-content: space-between;
+	width: 47%;
+	padding: 4% 0;
+}
+
+ul {
+	line-height: 1.5;
+	padding: 4% 4%;
+	list-style: disc;
+
+}
+
+.footer {
+	text-align: center;
+	margin: 5% 0 2% 0;
+}
+
+.contact {
+	padding: 1% 0;
+}
+
+.contact h3 {
+	padding: 1% 0;
+}
+
+.copyright {
+	text-align: center;
+	margin: 5% 0 10% 0;
+}
